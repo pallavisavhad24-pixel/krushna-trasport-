@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krushna Transport</title>
+    <link href="c:\Users\PALLAVI\Downloads\eicher3.jpeg" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: 'Roboto', sans-serif; line-height:1.6; color:#333; }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        nav .logo { font-size:1.8rem; font-weight:bold; color:#0b3d91; }
+        nav ul { list-style:none; display:flex; gap:25px; }
+        nav ul li a { text-decoration:none; color:#0b3d91; font-weight:bold; transition:0.3s; }
+        nav ul li a:hover { color:#ff6600; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
+                        url('c:\Users\PALLAVI\Downloads\eicher3.jpeg') center/cover no-repeat;
+            height: 100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        .hero h1 { font-size:3rem; color:#0b3d91; margin-bottom:20px; }
+        .hero p { font-size:1.2rem; margin-bottom:30px; }
+        .hero a {
+            background-color:#ff6600;
+            color:#fff;
+            padding:15px 30px;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:25px;
+            transition:0.3s;
+        }
+        .hero a:hover { background-color:#0b3d91; }
+
+        /* Services Section */
+        .services { padding:80px 50px; text-align:center; background-color:#f2f2f2; }
+        .services h2 { font-size:2.5rem; color:#0b3d91; margin-bottom:50px; }
+        .service-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px; }
+        .service-card { background:#fff; padding:20px; border-radius:15px; box-shadow:0 8px 15px rgba(0,0,0,0.1); transition:transform 0.3s; }
+        .service-card:hover { transform:translateY(-10px); }
+        .service-card img { width:80px; height:80px; margin-bottom:15px; }
+        .service-card h3 { color:#0b3d91; margin-bottom:10px; }
+        .service-card p { color:#555; }
+
+        /* Booking Section */
+        .booking { padding:80px 50px; background-color:#fff; text-align:center; }
+        .booking h2 { font-size:2.5rem; color:#0b3d91; margin-bottom:50px; }
+        .booking form { max-width:600px; margin:0 auto; display:grid; gap:20px; }
+        .booking input, .booking select, .booking button {
+            padding:15px;
+            font-size:1rem;
+            border-radius:8px;
+            border:1px solid #ccc;
+        }
+        .booking button { background:#ff6600; color:#fff; font-weight:bold; border:none; cursor:pointer; transition:0.3s; }
+        .booking button:hover { background:#0b3d91; }
+
+        /* Footer */
+        footer { background:#0b3d91; color:#fff; text-align:center; padding:40px 20px; }
+        footer a { color:#0099ff; text-decoration:none; margin:0 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">krushna transport</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>krushna Transport Services</h1>
+        <p>Your goods, our responsibility. Anytime, anywhere.</p>
+        <a href="#booking">Get a Quote</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="c:\Users\PALLAVI\Downloads\eicher 1.jpeg" alt="Eicher services">
+                <h3>Eicher services</h3>
+                <p>Safe and timely glass supplier across the state.</p>
+            </div>
+            <div class="service-card">
+                <img src="c:\Users\PALLAVI\Downloads\eicher2.jpeg" alt="Courier Service">
+                <h3>Courier Service</h3>
+                <p>Fast courier services for documents and small parcels.</p>
+            </div>
+            <div class="service-card">
+                <img src="c:\Users\PALLAVI\Downloads\eicher3.jpeg" alt="Logistics Solutions">
+                <h3>Logistics Solutions</h3>
+                <p>Efficient logistics planning for businesses of all sizes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <h2>Book a Transport</h2>
+        <form>
+            <input type="text" placeholder="Pickup Location" required>
+            <input type="text" placeholder="Drop-off Location" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Select Transport Type</option>
+                <option value="glass supplier">glass supplier</option>
+                <option value="material supplier">material supplier</option>
+                <option value="logistics">Logistics</option>
+            </select>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 krushna Transport. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
